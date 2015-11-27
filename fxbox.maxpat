@@ -2,31 +2,40 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 6,
-			"minor" : 1,
-			"revision" : 9,
-			"architecture" : "x86"
+			"major" : 7,
+			"minor" : 0,
+			"revision" : 0,
+			"architecture" : "x64",
+			"modernui" : 1
 		}
 ,
-		"rect" : [ 71.0, 45.0, 1849.0, 985.0 ],
+		"rect" : [ 668.0, 232.0, 572.0, 195.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
-		"gridonopen" : 0,
+		"gridonopen" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
-		"gridsnaponopen" : 0,
+		"gridsnaponopen" : 1,
+		"objectsnaponopen" : 1,
 		"statusbarvisible" : 2,
 		"toolbarvisible" : 1,
+		"lefttoolbarpinned" : 0,
+		"toptoolbarpinned" : 0,
+		"righttoolbarpinned" : 0,
+		"bottomtoolbarpinned" : 0,
+		"toolbars_unpinned_last_save" : 0,
+		"tallnewobj" : 0,
 		"boxanimatetime" : 200,
-		"imprint" : 0,
 		"enablehscroll" : 1,
 		"enablevscroll" : 1,
 		"devicewidth" : 0.0,
 		"description" : "",
 		"digest" : "",
 		"tags" : "",
+		"style" : "",
+		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-33",
@@ -67,6 +76,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 319.5, 653.0, 41.0, 20.0 ],
+					"style" : "",
 					"text" : "gate~"
 				}
 
@@ -81,6 +91,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 256.0, 653.0, 41.0, 20.0 ],
+					"style" : "",
 					"text" : "gate~"
 				}
 
@@ -125,6 +136,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 702.5, 653.0, 41.0, 20.0 ],
+					"style" : "",
 					"text" : "gate~"
 				}
 
@@ -139,12 +151,14 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 639.0, 653.0, 41.0, 20.0 ],
+					"style" : "",
 					"text" : "gate~"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"activedialcolor" : [ 0.011765, 0.396078, 0.752941, 1.0 ],
 					"id" : "obj-10",
 					"maxclass" : "live.dial",
 					"numinlets" : 1,
@@ -179,6 +193,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 957.0, 365.0, 37.0, 18.0 ],
+					"style" : "",
 					"text" : "open"
 				}
 
@@ -193,6 +208,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 910.0, 365.0, 33.0, 18.0 ],
+					"style" : "",
 					"text" : "plug"
 				}
 
@@ -293,6 +309,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 946.25, 653.0, 41.0, 20.0 ],
+					"style" : "",
 					"text" : "gate~"
 				}
 
@@ -307,6 +324,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 888.0, 653.0, 41.0, 20.0 ],
+					"style" : "",
 					"text" : "gate~"
 				}
 
@@ -351,6 +369,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 92.5, 512.0, 41.0, 20.0 ],
+					"style" : "",
 					"text" : "gate~"
 				}
 
@@ -365,6 +384,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 29.0, 512.0, 41.0, 20.0 ],
+					"style" : "",
 					"text" : "gate~"
 				}
 
@@ -399,16 +419,30 @@
 			}
 , 			{
 				"box" : 				{
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-1",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 8,
+					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal", "signal", "", "list", "int", "", "", "" ],
 					"patching_rect" : [ 910.0, 424.5, 113.5, 20.0 ],
 					"save" : [ "#N", "vst~", "loaduniqueid", 0, ";" ],
-					"text" : "vst~"
+					"saved_object_attributes" : 					{
+						"parameter_enable" : 0
+					}
+,
+					"snapshot" : 					{
+
+					}
+,
+					"style" : "",
+					"text" : "vst~",
+					"viewvisibility" : 0
 				}
 
 			}
@@ -448,7 +482,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 287.0, 41.5, 25.0, 25.0 ]
+					"patching_rect" : [ 287.0, 41.5, 25.0, 25.0 ],
+					"style" : ""
 				}
 
 			}
@@ -460,7 +495,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 29.0, 41.5, 25.0, 25.0 ]
+					"patching_rect" : [ 29.0, 41.5, 25.0, 25.0 ],
+					"style" : ""
 				}
 
 			}
@@ -474,6 +510,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 474.5, 386.0, 32.5, 20.0 ],
+					"style" : "",
 					"text" : "*~"
 				}
 
@@ -488,12 +525,14 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 346.5, 386.0, 32.5, 20.0 ],
+					"style" : "",
 					"text" : "*~"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"activedialcolor" : [ 0.011765, 0.396078, 0.752941, 1.0 ],
 					"id" : "obj-20",
 					"maxclass" : "live.dial",
 					"numinlets" : 1,
@@ -556,6 +595,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 474.5, 265.0, 51.0, 20.0 ],
+					"style" : "",
 					"text" : "tapout~"
 				}
 
@@ -590,6 +630,7 @@
 			}
 , 			{
 				"box" : 				{
+					"activedialcolor" : [ 0.011765, 0.396078, 0.752941, 1.0 ],
 					"id" : "obj-11",
 					"maxclass" : "live.dial",
 					"numinlets" : 1,
@@ -615,6 +656,7 @@
 			}
 , 			{
 				"box" : 				{
+					"activedialcolor" : [ 0.011765, 0.396078, 0.752941, 1.0 ],
 					"id" : "obj-6",
 					"maxclass" : "live.dial",
 					"numinlets" : 1,
@@ -640,6 +682,7 @@
 			}
 , 			{
 				"box" : 				{
+					"activedialcolor" : [ 0.011765, 0.396078, 0.752941, 1.0 ],
 					"id" : "obj-5",
 					"maxclass" : "live.dial",
 					"numinlets" : 1,
@@ -665,6 +708,7 @@
 			}
 , 			{
 				"box" : 				{
+					"activedialcolor" : [ 0.011765, 0.396078, 0.752941, 1.0 ],
 					"id" : "obj-4",
 					"maxclass" : "live.dial",
 					"numinlets" : 1,
@@ -698,6 +742,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 296.0, 265.0, 51.0, 20.0 ],
+					"style" : "",
 					"text" : "tapout~"
 				}
 
@@ -712,6 +757,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "tapconnect" ],
 					"patching_rect" : [ 474.5, 169.0, 74.0, 20.0 ],
+					"style" : "",
 					"text" : "tapin~ 2000"
 				}
 
@@ -726,6 +772,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 741.0, 169.0, 62.0, 20.0 ],
+					"style" : "",
 					"text" : "degrade~"
 				}
 
@@ -740,6 +787,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
 					"patching_rect" : [ 160.0, 169.0, 77.0, 20.0 ],
+					"style" : "",
 					"text" : "yafr2"
 				}
 
@@ -754,6 +802,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 679.0, 169.0, 62.0, 20.0 ],
+					"style" : "",
 					"text" : "degrade~"
 				}
 
@@ -765,7 +814,8 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 92.5, 760.0, 25.0, 25.0 ]
+					"patching_rect" : [ 92.5, 760.0, 25.0, 25.0 ],
+					"style" : ""
 				}
 
 			}
@@ -776,7 +826,8 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 29.0, 760.0, 25.0, 25.0 ]
+					"patching_rect" : [ 29.0, 760.0, 25.0, 25.0 ],
+					"style" : ""
 				}
 
 			}
@@ -790,6 +841,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "tapconnect" ],
 					"patching_rect" : [ 296.0, 169.0, 74.0, 20.0 ],
+					"style" : "",
 					"text" : "tapin~ 2000"
 				}
 
@@ -804,6 +856,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
 					"patching_rect" : [ 79.0, 169.0, 73.0, 20.0 ],
+					"style" : "",
 					"text" : "yafr2"
 				}
 
@@ -1390,7 +1443,35 @@
 				}
 
 			}
- ]
+ ],
+		"parameters" : 		{
+			"obj-13" : [ "live.text[6]", "live.text", 0 ],
+			"obj-11" : [ "Diffusion[2]", "Diffusion", 0 ],
+			"obj-19" : [ "live.text[4]", "live.text", 0 ],
+			"obj-41" : [ "live.text[8]", "live.text", 0 ],
+			"obj-20" : [ "live.dial[12]", "Feedback", 0 ],
+			"obj-16" : [ "live.gain~[10]", "Delay Level", 0 ],
+			"obj-33" : [ "live.text[11]", "live.text", 0 ],
+			"obj-30" : [ "live.gain~[9]", "Distortion", 0 ],
+			"obj-10" : [ "live.dial[19]", "Time", 0 ],
+			"obj-6" : [ "live.dial[13]", "Damping", 0 ],
+			"obj-5" : [ "live.dial[14]", "Decay", 0 ],
+			"obj-4" : [ "live.dial[15]", "Size", 0 ],
+			"obj-31" : [ "live.text[3]", "live.text", 0 ],
+			"obj-32" : [ "live.text[2]", "live.text", 0 ],
+			"obj-9" : [ "live.gain~[8]", "VST", 0 ],
+			"obj-12" : [ "live.gain~[11]", "Reverb Level", 0 ]
+		}
+,
+		"dependency_cache" : [ 			{
+				"name" : "yafr2.maxpat",
+				"bootpath" : "/Users/Shared/Max 7/Examples/effects/reverb/lib",
+				"patcherrelativepath" : "../../../../../../../../../Shared/Max 7/Examples/effects/reverb/lib",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+ ],
+		"embedsnapshot" : 0
 	}
 
 }
